@@ -1,0 +1,9 @@
+#text {
+	background: grey; 
+	color: yellow;
+	font-size: 32px;
+}
+
+.text-red {
+	color: red;
+}
