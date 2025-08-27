@@ -1,9 +1,74 @@
-#text {
-	background: grey; 
-	color: yellow;
-	font-size: 32px;
+.block-violet {
+	background: #5e17eb;
+	height: 500px;
 }
 
-.text-red {
-	color: red;
+.block-yellow {
+	background: #dbb20d;
+	height: 500px;
 }
+
+.block-with-padding {
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.block2-item {
+	width: 100px;
+	height: 100px;
+	background: grey;
+}
+
+.block3-item {
+	width: 100px;
+	height: 100px;
+	background: grey;
+	margin-bottom: 20px;
+}
+
+.block4-item {
+	width: 100px;
+	height: 100px;
+	background: grey;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.block5-item {
+	width: 100%;
+	height: 50%;
+	background: grey;
+}
+
+.block6-item {
+	width: 50%;
+	height: 50%;
+	background: grey;
+}
+
+.block7-item {
+	width: 250px;
+	height: 250px;
+	background: grey;
+	border: 5px solid lightgreen;
+	border-radius: 100%;
+}
+
+.block8-item {
+	border: 5px solid green;
+	background: grey;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
