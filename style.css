@@ -9,7 +9,7 @@ body {
 	background: #121212;
 	color: lightgray;
 	padding: 16px;
-	padding-right: 64px;
+	padding-top: 76px;
 }
 
 ul {
@@ -225,18 +225,18 @@ ul {
 	transform: translateY(-60px);
 }
 
-.top {
+.navbar {
 	position: fixed;
-	right: 12px;
-	bottom: 12px;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 60px;
 	background: #4c5578;
-	width: 40px;
-	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #fff !important;
-	text-decoration: none;
+	font-size: 44px;
+	letter-spacing: 3px;
 }
 
 
