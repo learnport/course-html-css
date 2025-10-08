@@ -3,170 +3,299 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Форми</title>
+	<title>Cyborg</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>	
-	<div class="wrap">
-		<h2 class="section-title">Basic</h2>
-
-		<div class="basic section-block">
-			<h3 class="basic-title">Articel Title</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<span class="basic-date">19.04.2026 19:30</span>
-		</div>
-
-		<div class="basic section-block">
-			<h3 class="basic-title">Tags</h3>
-			<span class="basic-tag">HTML</span>
-	    <span class="basic-tag">CSS</span>
-	    <span class="basic-tag">JavaScript</span>
-	    <span class="basic-tag">TypeScript</span>
-	    <span class="basic-tag">React</span>
-		</div>
-
-		<div class="between section-block">
-			<span class="between-logo">LOGO</span>
-			<span class="between-register">register</span>
-		</div>
-
-		<h2 class="section-title">Flex</h2>
-
-		<div class="flex-between section-block">
-			<span class="flex-between-logo">LOGO</span>
-			<span class="flex-between-register">register</span>
-		</div>
-
-		<div class="flex-end section-block">
-			<span>element 1</span>
-	    <span>element 2</span>
-	    <span>element 3</span>
-	    <span>element 4</span>
-		</div>
-
-		<div class="flex-around section-block">
-			<span>element 1</span>
-	    <span>element 2</span>
-	    <span>element 3</span>
-	    <span>element 4</span>
-		</div>
-
-		<ul class="flex-list section-block">
-			<li>youtube</li>
-	    <li>facebook</li>
-	    <li>instagram</li>
-		</ul>
-
-		<ul class="flex-list-vertical section-block">
-			<li>youtube</li>
-	    <li>facebook</li>
-	    <li>instagram</li>
-		</ul>
-
-		<div class="flex-navbar section-block">
-			<div class="flex-navbar-left">
-				<span class="flex-navbar-logo">LOGO</span>
-				<ul class="flex-navbar-list">
-					<li>Home</li>
-	        <li>About</li>
-	        <li>Contacts</li>
-				</ul>
+<body>					
+	<div class="header">
+		<div class="left-side">
+			<img src="./img/logo.png">
+			<div class="search-wrap">
+				<i class="fa-solid fa-magnifying-glass search-icon"></i>
+				<input placeholder="Type something..." type="text" name="search" class="search-input">
 			</div>
-			<span class="flex-navbar-register">register</span>
 		</div>
 
-		<div class="flex-columns section-block">
-			<div class="flex-column-left"></div>
-			<div class="flex-column-right"></div>
+		<ul class="menu">
+			<li class="menu-item">Home</li>
+			<li class="menu-item">Browse</li>
+			<li class="menu-item">Details</li>
+			<li class="menu-item">Tools</li>
+			<li class="menu-item menu-profile-item">
+				Profile
+				<img src="./img/profile-header.jpg" alt="profile" class="avatar">
+			</li>
+		</ul>
+
+		<!-- Mobile Icon -->
+		<i class="fa-solid fa-bars menu-icon"></i>
+	</div>
+
+	<div class="main-section">
+		<div class="banner">
+			<p class="banner-weclome-text">Welcome To Cyborg</p>
+			<h2 class="banner-title">
+				<span class="text-red">BROWSE</span> OUR POPULAR <br /> GAMES HERE
+			</h2>
+			<div>
+				<button class="btn">Browse Now</button>
+			</div>
 		</div>
 
-		<h2 class="section-title">Grid</h2>
+		<div class="section">
+			<h3 class="section-title">
+				<span class="text-underline">Most Popular</span>
+				<span class="text-red"> Right Now</span>
+			</h3>
 
-		<div class="grid-columns section-block">
-			<div class="grid-column-left"></div>
-			<div class="grid-column-right"></div>
+			<div class="pupular-grid">
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-01.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-02.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-03.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-04.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-05.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-06.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-07.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+				<div class="popular-card">
+					<img class="popular-card-img" src="./img/popular-08.jpg" alt="">
+					<div class="popular-card-row">
+						<h4 class="popular-card-game">Mini Crafr</h4>
+						<span>
+							<i class="fa-solid fa-star star"></i>
+							4.5
+						</span>
+					</div>
+					<div class="popular-card-row">
+						<h4 class="popular-card-company">Rails</h4>
+						<span>
+							<i class="fa-solid fa-download download"></i>
+							2.3m
+						</span>
+					</div>
+				</div>
+
+				<button class="btn section-btn">Browse Now</button>
+			</div>
 		</div>
 
-		<div class="grid-columns4 section-block">
-			<div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
+		<div class="section">
+			<h3 class="section-title">
+				<span class="text-underline">Your Gaming</span>
+				<span class="text-red"> Library</span>
+			</h3>
+
+		  <div class="library-list">
+		  	<div class="library-list-item">
+		  		<div>
+		  			<img class="library-list-icon" src="./img/game-01.jpg" alt="">
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Mini Crafr</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  		  <h5 class="library-list-title">Date Added</h5>
+						<p class="library-list-value">11.01.2026</p>
+		  		</div>
+		  		<div>
+		  		  <h5 class="library-list-title">Hours Played</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Currently</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Friends</h5>
+						<p class="library-list-value">15</p>
+		  		</div>
+		  		<div>
+		  			<button class="btn-transparent">Download</button>
+		  		</div>
+		  	</div>
+		  	<div class="library-list-item">
+		  		<div>
+		  			<img class="library-list-icon" src="./img/game-02.jpg" alt="">
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Mini Crafr</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  		  <h5 class="library-list-title">Date Added</h5>
+						<p class="library-list-value">11.01.2026</p>
+		  		</div>
+		  		<div>
+		  		  <h5 class="library-list-title">Hours Played</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Currently</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Friends</h5>
+						<p class="library-list-value">15</p>
+		  		</div>
+		  		<div>
+		  			<button class="btn-transparent">Download</button>
+		  		</div>
+		  	</div>
+		  	<div class="library-list-item">
+		  		<div>
+		  			<img class="library-list-icon" src="./img/game-03.jpg" alt="">
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Mini Crafr</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  		  <h5 class="library-list-title">Date Added</h5>
+						<p class="library-list-value">11.01.2026</p>
+		  		</div>
+		  		<div>
+		  		  <h5 class="library-list-title">Hours Played</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Currently</h5>
+						<p class="library-list-value">Rails</p>
+		  		</div>
+		  		<div>
+		  			<h5 class="library-list-title">Friends</h5>
+						<p class="library-list-value">15</p>
+		  		</div>
+		  		<div>
+		  			<button class="btn-transparent">Download</button>
+		  		</div>
+		  	</div>
+		  </div>
+
+		  <button class="btn section-btn">Browse Now</button>
 		</div>
+	</div>
 
-		<div class="grid-rows section-block">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-
-		<div class="grid-system section-block">	
-			<div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    <div></div>
-		</div>
-
-		<div class="grid-gap section-block">
-			<h3>Title</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-
-			<span>19.04</span>
-		</div>
-
-		<h2 class="section-title">Absolute</h2>	
-
-		<div class="absolute section-block">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-
-			<img class="absolute-icon" src="./img/icon.svg">
-		</div>	
-
-		<div class="absolute-second section-block">
-			<p class="absolute-second-subtitle">Subtitle</p>
-			<h5 class="absolute-second-title">Title</h5>
-		</div>
-
-		<div class="navbar">Навчальний Порт</div>
+	<div class="footer">
+		Copyright © 2036 Cyborg Gaming Company. All rights reserved.
 	</div>
 </body>
 </html>
-
-
-
-
-
-
 
 
 
