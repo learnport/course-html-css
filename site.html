@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>					
-	<div class="header">
+	<header class="header">
 		<div class="left-side">
 			<img src="./img/logo.png">
 			<div class="search-wrap">
@@ -20,33 +20,45 @@
 			</div>
 		</div>
 
-		<ul class="menu">
-			<li class="menu-item">Home</li>
-			<li class="menu-item">Browse</li>
-			<li class="menu-item">Details</li>
-			<li class="menu-item">Tools</li>
+		<nav>
+			<ul class="menu">
+			<li class="menu-item">
+				<a href="#">Home</a>
+			</li>
+			<li class="menu-item">
+				<a href="#">Browse</a>
+			</li>
+			<li class="menu-item">
+				<a href="#">Deatils</a>
+			</li>
+			<li class="menu-item">
+				<a href="#">Tools</a>
+			</li>
 			<li class="menu-item menu-profile-item">
-				Profile
-				<img src="./img/profile-header.jpg" alt="profile" class="avatar">
+				<a href="#">
+					Profile
+					<img src="./img/profile-header.jpg" alt="profile" class="avatar">
+				</a>
 			</li>
 		</ul>
+		</nav>
 
 		<!-- Mobile Icon -->
 		<i class="fa-solid fa-bars menu-icon"></i>
-	</div>
+	</header>
 
-	<div class="main-section">
-		<div class="banner">
+	<main class="main-section">
+		<section class="banner">
 			<p class="banner-weclome-text">Welcome To Cyborg</p>
-			<h2 class="banner-title">
+			<h1 class="banner-title">
 				<span class="text-red">BROWSE</span> OUR POPULAR <br /> GAMES HERE
-			</h2>
+			</h1>
 			<div>
 				<button class="btn">Browse Now</button>
 			</div>
-		</div>
+		</section>
 
-		<div class="section">
+		<section class="section">
 			<h3 class="section-title">
 				<span class="text-underline">Most Popular</span>
 				<span class="text-red"> Right Now</span>
@@ -192,9 +204,9 @@
 
 				<button class="btn section-btn">Browse Now</button>
 			</div>
-		</div>
+		</section>
 
-		<div class="section">
+		<section class="section">
 			<h3 class="section-title">
 				<span class="text-underline">Your Gaming</span>
 				<span class="text-red"> Library</span>
@@ -288,12 +300,12 @@
 		  </div>
 
 		  <button class="btn section-btn">Browse Now</button>
-		</div>
-	</div>
+		</section>
+	</main>
 
-	<div class="footer">
+	<footer class="footer">
 		Copyright © 2036 Cyborg Gaming Company. All rights reserved.
-	</div>
+	</footer>
 </body>
 </html>
 

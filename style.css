@@ -121,10 +121,15 @@ ul {
 	column-gap: 16px;
 }
 
-.menu-item {
+.menu-item a {
 	color: gray;
 	font-size: 16px;
 	cursor: pointer;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 16px;
 }
 
 .menu-item:hover {
@@ -136,9 +141,6 @@ ul {
 	background: #27292a;
 	border-radius: 24px;
 	border: 1px solid #444;
-	display: flex;
-	align-items: center;
-	column-gap: 16px;
 }
 
 .avatar {
