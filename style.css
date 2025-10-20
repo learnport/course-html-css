@@ -110,7 +110,7 @@ li:hover::before {
   justify-content: center;
   border: 2px solid #fff;
   border-radius: 24%;
-  //animation: logoAnimation 5s ease-in-out infinite;
+  animation: logoAnimation 5s ease-in-out infinite;
 }
 
 @keyframes logoAnimation {
