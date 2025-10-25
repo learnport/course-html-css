@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Themed Page</title>
+	<title>BEM</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link 
 		rel="stylesheet" 
@@ -11,74 +11,144 @@
 		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
 		crossorigin="anonymous" 
 		referrerpolicy="no-referrer"
-		/>
+	/>
 </head>
 <body>	
-	<header class="header">
-		<div class="header-left">
-			<img src="./img/logo.png" alt="" class="header-logo">
-			<nav>
-				<ul class="menu-list">
-					<li>About</li>
-					<li>Service</li>
-					<li>FAQ</li>
-					<li>Contacts</li>
-				</ul>
-			</nav>
-		</div>
-		<div class="header-right">
-			<div class="header-icon">
-        <i class="fa-brands fa-facebook-f"></i>
-      </div>
-      <div class="header-icon">
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-      <div class="header-icon">
-        <i class="fa-regular fa-envelope"></i>
-      </div>
-			<button class="button button-primary">+380506914141</button>
-		</div>
-	</header>
+  <header class="header">
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item">Home</li>
+				<li class="menu__item menu__item--active">New</li>
+				<li class="menu__item">Man</li>
+				<li class="menu__item">Woman</li>
+				<li class="menu__item">Cids</li>
+				<li class="menu__item">Sport</li>
+				<li class="menu__item">Contacts</li>
+			</ul>
+		</nav>
+	</header> 
 
-  <main>
-  	<section class="banner">
-  		<div class="banner-left">
-  			<span class="banner-note">we are expert in</span>
-				<h1 class="banner-title">business solutions</h1>
-  		</div>
-  		<div class="banner-right">
-  		  <img src="./img/banner-img.svg" alt="banner-img" class="banner-img">
+	<main class="main">
+		<section class="product">
+		  <div class="product__preview">
+  			<img src="./img/shoes-1.png" alt="">
   		</div>
 
-  		<div class="benefits">
-  			<div class="benefit-item">
-					<div class="benefit-icon"><i class="fa-solid fa-star"></i></div>
-					<div>
-						<h4 class="benefit-title">Smart Solutions</h4>
-						<span class="benefit-text">Optimize your workflow easily</span>
-					</div>
+  		<div class="product__info">
+  			<span class="product__category">New</span>
+  			<h1 class="product__title">Adidas Forum Low Cl</h1>
+  			<p class="product__description">
+	  				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	  		</p>
+	  		<span class="product__price">84$</span>
+	  		<div class="product-sizes">
+  				<h4 class="product-sizes__title">Sizes</h4>
+  				<ul class="product-sizes__list">
+  					<li class="product-sizes__item product-sizes__item--active">38</li>
+  					<li class="product-sizes__item">39</li>
+  					<li class="product-sizes__item">41</li>
+  					<li class="product-sizes__item">42</li>
+  					<li class="product-sizes__item">44</li>
+  				</ul>
 				</div>
-
-				<div class="benefit-item">
-					<div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div>
-					<div>
-						<h4 class="benefit-title">Fast Performance</h4>
-						<span class="benefit-text">Experience lightning-fast speed</span>
-					</div>
-				</div>
-
-				<div class="benefit-item">
-					<div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
-					<div>
-						<h4 class="benefit-title">24/7 Support</h4>
-						<span class="benefit-text">Help anytime you need</span>
-					</div>
-				</div>
+				<button class="button button--primary">Order Now</button>
   		</div>
-  	</section>
-  </main>
+		</section>
+
+		<section class="related-products">
+			<h2 class="related-products__title">Related Products</h2>
+
+			<div class="related-products__list">
+			  <div class="product-card">
+			  	<div class="product-card__header">
+  					<img src="./img/logo.png" alt="" class="product-card__logo">
+  					<i class="fa-regular fa-heart"></i>
+  				</div>
+  				<img src="./img/shoes-2.png" alt="" class="product-card__image">
+  				<div>
+  					<h3 class="product-card__title">Adidas ZX Flux</h3>
+  					<p class="product-card__descripton">
+  						Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!
+  					</p>
+  				</div>
+  				<div class="product-sizes">
+	  				<h4 class="product-sizes__title">Sizes</h4>
+	  				<ul class="product-sizes__list">
+	  					<li class="product-sizes__item product-sizes__item-small">38</li>
+	  					<li class="product-sizes__item product-sizes__item-small">39</li>
+	  					<li class="product-sizes__item product-sizes__item-small">41</li>
+	  					<li class="product-sizes__item product-sizes__item-small">42</li>
+	  					<li class="product-sizes__item product-sizes__item-small">44</li>
+	  				</ul>
+					</div>
+					<button class="button button__full button--primary">Order Now</button>
+			  </div>
+			  <div class="product-card">
+			  	<div class="product-card__header">
+  					<img src="./img/logo.png" alt="" class="product-card__logo">
+  					<i class="fa-regular fa-heart"></i>
+  				</div>
+  				<img src="./img/shoes-3.png" alt="" class="product-card__image">
+  				<div>
+  					<h3 class="product-card__title">Adidas ZX Flux</h3>
+  					<p class="product-card__descripton">
+  						Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!
+  					</p>
+  				</div>
+  				<div class="product-sizes">
+	  				<h4 class="product-sizes__title">Sizes</h4>
+	  				<ul class="product-sizes__list">
+	  					<li class="product-sizes__item product-sizes__item-small">38</li>
+	  					<li class="product-sizes__item product-sizes__item-small">39</li>
+	  					<li class="product-sizes__item product-sizes__item-small">41</li>
+	  					<li class="product-sizes__item product-sizes__item-small">42</li>
+	  					<li class="product-sizes__item product-sizes__item-small">44</li>
+	  				</ul>
+					</div>
+					<button class="button button__full button--primary">Order Now</button>
+			  </div>
+			  <div class="product-card">
+			  	<div class="product-card__header">
+  					<img src="./img/logo.png" alt="" class="product-card__logo">
+  					<i class="fa-regular fa-heart"></i>
+  				</div>
+  				<img src="./img/shoes-4.png" alt="" class="product-card__image">
+  				<div>
+  					<h3 class="product-card__title">Adidas ZX Flux</h3>
+  					<p class="product-card__descripton">
+  						Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!
+  					</p>
+  				</div>
+  				<div class="product-sizes">
+	  				<h4 class="product-sizes__title">Sizes</h4>
+	  				<ul class="product-sizes__list">
+	  					<li class="product-sizes__item product-sizes__item-small">38</li>
+	  					<li class="product-sizes__item product-sizes__item-small">39</li>
+	  					<li class="product-sizes__item product-sizes__item-small">41</li>
+	  					<li class="product-sizes__item product-sizes__item-small">42</li>
+	  					<li class="product-sizes__item product-sizes__item-small">44</li>
+	  				</ul>
+					</div>
+					<button class="button button__full button--primary">Order Now</button>
+			  </div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
