@@ -3,139 +3,264 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BEM</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link 
-		rel="stylesheet" 
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-		crossorigin="anonymous" 
-		referrerpolicy="no-referrer"
-	/>
+	<title>Andrew Kovalchuk</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+	  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+	  rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>	
-  <header class="header">
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__item">Home</li>
-				<li class="menu__item menu__item--active">New</li>
-				<li class="menu__item">Man</li>
-				<li class="menu__item">Woman</li>
-				<li class="menu__item">Cids</li>
-				<li class="menu__item">Sport</li>
-				<li class="menu__item">Contacts</li>
-			</ul>
-		</nav>
-	</header> 
+	<main>
+		<section class="preview">
+			<div class="preview__photo">
+        <img class="animate__animated animate__fadeInBottomLeftShort" src="img/profile-photo.png" alt="Profile Photo">
+      </div>
+			<div class="wrap preview__container">
+				<header class="header">
+					<img class="header__logo animate__animated animate__fadeInRight" src="img/profile.svg" alt="Logo">
 
-	<main class="main">
-		<section class="product">
-		  <div class="product__preview">
-  			<img src="./img/shoes-1.png" alt="">
-  		</div>
+					<nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item animate__animated animate__fadeInLeft"><a href="#">Service</a></li>
+              <li class="menu__item animate__animated animate__fadeInLeft"><a href="#">Portfolio</a></li>
+              <li class="menu__item animate__animated animate__fadeInLeft"><a href="#">Skills</a></li>
+            </ul>
+          </nav>
+				</header>
 
-  		<div class="product__info">
-  			<span class="product__category">New</span>
-  			<h1 class="product__title">Adidas Forum Low Cl</h1>
-  			<p class="product__description">
-	  				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-	  		</p>
-	  		<span class="product__price">84$</span>
-	  		<div class="product-sizes">
-  				<h4 class="product-sizes__title">Sizes</h4>
-  				<ul class="product-sizes__list">
-  					<li class="product-sizes__item product-sizes__item--active">38</li>
-  					<li class="product-sizes__item">39</li>
-  					<li class="product-sizes__item">41</li>
-  					<li class="product-sizes__item">42</li>
-  					<li class="product-sizes__item">44</li>
-  				</ul>
+				<div class="introduction">
+					<div class="animate__animated animate__fadeInRightShort">
+						<h1 class="name">Andrew <br /> Kovalchuk</h1>
+					</div>
+					<div class="introduction__content animate__animated animate__fadeInRightShort">
+						<h2 class="title">Introduction</h2>
+            <p class="text-big introduction__text">
+              Product Designer and Developer, based in Ukraine.
+            </p>
+            <p class="text-small">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa
+            </p>
+					</div>
 				</div>
-				<button class="button button--primary">Order Now</button>
-  		</div>
-		</section>
 
-		<section class="related-products">
-			<h2 class="related-products__title">Related Products</h2>
+				<div class="social">
+					<ul class="social__list social-list animate__animated animate__fadeInRightShort delay-300ms">
+            <li class="social__list--item">
+              <a class="social-link" href="https://github.com/learnport/course-html-css" target="_blank" aria-label="GitHub profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li class="social__list--item">
+              <a class="social-link" href="https://github.com/learnport/course-html-css" target="_blank" aria-label="Linkedin profile">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social__list--item">
+              <a class="social-link" href="https://github.com/learnport/course-html-css" target="_blank" aria-label="Instagram profile">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
 
-			<div class="related-products__list">
-			  <div class="product-card">
-			  	<div class="product-card__header">
-  					<img src="./img/logo.png" alt="" class="product-card__logo">
-  					<i class="fa-regular fa-heart"></i>
-  				</div>
-  				<img src="./img/shoes-2.png" alt="" class="product-card__image">
-  				<div>
-  					<h3 class="product-card__title">Adidas ZX Flux</h3>
-  					<p class="product-card__descripton">
-  						Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!
-  					</p>
-  				</div>
-  				<div class="product-sizes">
-	  				<h4 class="product-sizes__title">Sizes</h4>
-	  				<ul class="product-sizes__list">
-	  					<li class="product-sizes__item product-sizes__item-small">38</li>
-	  					<li class="product-sizes__item product-sizes__item-small">39</li>
-	  					<li class="product-sizes__item product-sizes__item-small">41</li>
-	  					<li class="product-sizes__item product-sizes__item-small">42</li>
-	  					<li class="product-sizes__item product-sizes__item-small">44</li>
-	  				</ul>
-					</div>
-					<button class="button button__full button--primary">Order Now</button>
-			  </div>
-			  <div class="product-card">
-			  	<div class="product-card__header">
-  					<img src="./img/logo.png" alt="" class="product-card__logo">
-  					<i class="fa-regular fa-heart"></i>
-  				</div>
-  				<img src="./img/shoes-3.png" alt="" class="product-card__image">
-  				<div>
-  					<h3 class="product-card__title">Adidas ZX Flux</h3>
-  					<p class="product-card__descripton">
-  						Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!
-  					</p>
-  				</div>
-  				<div class="product-sizes">
-	  				<h4 class="product-sizes__title">Sizes</h4>
-	  				<ul class="product-sizes__list">
-	  					<li class="product-sizes__item product-sizes__item-small">38</li>
-	  					<li class="product-sizes__item product-sizes__item-small">39</li>
-	  					<li class="product-sizes__item product-sizes__item-small">41</li>
-	  					<li class="product-sizes__item product-sizes__item-small">42</li>
-	  					<li class="product-sizes__item product-sizes__item-small">44</li>
-	  				</ul>
-					</div>
-					<button class="button button__full button--primary">Order Now</button>
-			  </div>
-			  <div class="product-card">
-			  	<div class="product-card__header">
-  					<img src="./img/logo.png" alt="" class="product-card__logo">
-  					<i class="fa-regular fa-heart"></i>
-  				</div>
-  				<img src="./img/shoes-4.png" alt="" class="product-card__image">
-  				<div>
-  					<h3 class="product-card__title">Adidas ZX Flux</h3>
-  					<p class="product-card__descripton">
-  						Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!
-  					</p>
-  				</div>
-  				<div class="product-sizes">
-	  				<h4 class="product-sizes__title">Sizes</h4>
-	  				<ul class="product-sizes__list">
-	  					<li class="product-sizes__item product-sizes__item-small">38</li>
-	  					<li class="product-sizes__item product-sizes__item-small">39</li>
-	  					<li class="product-sizes__item product-sizes__item-small">41</li>
-	  					<li class="product-sizes__item product-sizes__item-small">42</li>
-	  					<li class="product-sizes__item product-sizes__item-small">44</li>
-	  				</ul>
-					</div>
-					<button class="button button__full button--primary">Order Now</button>
-			  </div>
+          <a class="link animate__animated animate__fadeInRightShort delay-300ms" href="https://discord.gg/gmFM5pdZrk" target="_blank">My Story</a>
+				</div>
 			</div>
 		</section>
+
+		<section class="wrap contacts">
+			<div>
+				<h2 class="title">Contacts</h2>
+        <p class="text-big contacts__text">Any Type Of Query <br /> & Discussion.</p>
+        <p class="text-small">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+        <a class="link contacts__link" href="mailto:user@gmail.com" target="_blank">user@gmail.com</a>
+			</div>
+			<div>
+				<p class="text-big">
+          You can't use up creativity, the more you use, more you have in your signifant
+        </p>
+        <p class="text-small contacts__description">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+          totam rem aperiam, eaque ipsa
+        </p>
+
+        <div class="experience">
+          <div>
+            <span class="experience__count">14</span>
+            <span class="experience__text">Years of <br /> Experience</span>
+          </div>
+          <div>
+            <span class="experience__count">87</span>
+            <span class="experience__text">Satisfied <br /> Clients</span>
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<section class="portfolio">
+			<div class="wrap">
+				<h2 class="title">Portfolio</h2>
+				<div class="portfolio__container">
+					<div>
+						<p class="text-big portfolio__description">All Creative Works,<br /> Selected projects</p>
+	          <p class="text-small">
+	          	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+	        	</p>
+	          <a class="link portfolio__link" href="https://discord.gg/gmFM5pdZrk" target="_blank">
+	          	Explore More
+	          </a>
+	          <div class="portfolio__img portfolio__img--1">
+	            <img src="img/portfolio-1.jpg" alt="Project Name">
+	          </div>
+	          <div class="portfolio__img portfolio__img--2">
+	            <img src="img/portfolio-2.jpg" alt="Project Name">
+	          </div>
+					</div>
+					<div>
+						<div class="portfolio__img portfolio__img--3">
+	            <img src="img/portfolio-2.jpg" alt="Project Name">
+	          </div>
+	          <div class="portfolio__img portfolio__img--4">
+	            <img src="img/portfolio-3.jpg" alt="Project Name">
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	  <section class="skills wrap">
+	  	<div>
+	  		<h2 class="title">Skills</h2>
+          <p class="text-big skills__text">My Skills <br /> & Knowleges</p>
+	  		</div>
+	  	<div>
+	  		<ul class="skiils__list">
+	  			<li class="skills__list--item">
+            <div class="skills__level">middle+</div>
+            <div class="skills__name">Figma</div>
+            <div class="skills__stars">
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+          <li class="skills__list--item">
+            <div class="skills__level">middle</div>
+            <div class="skills__name">HTML</div>
+            <div class="skills__stars">
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+          <li class="skills__list--item">
+            <div class="skills__level">middle</div>
+            <div class="skills__name">CSS</div>
+            <div class="skills__stars">
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+          <li class="skills__list--item">
+            <div class="skills__level">junior+</div>
+            <div class="skills__name">JavaScript</div>
+            <div class="skills__stars">
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+          <li class="skills__list--item">
+            <div class="skills__level">junior+</div>
+            <div class="skills__name">TypeScript</div>
+            <div class="skills__stars">
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star filled-start"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+	  		</ul>
+	  	</div>
+	  </section>
 	</main>
+
+	<footer class="footer">
+		<div class="footer__container wrap">
+			<div>
+				<p class="text-big"> Got a project? <br /> Let's talk </p>
+        <p class="text-small footer__description">
+          Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem accusantium
+        </p>
+        <a class="link form__link" href="mailto:user@gmail.com" target="_blank">user@gmail.com</a>
+			</div>
+			<div>
+				<p class="text-big"> Estimate your project? <br /> Let me know here</p>
+				<form action="" id="form" class="form">
+          <div class="form__block">
+            <label for="name" class="form__label">What's your name?</label>
+            <input type="text" id="name" name="username" class="text-input">
+          </div>
+          <div class="form__block">
+            <label for="email" class="form__label">What's your email?</label>
+            <input type="email" id="email" name="email" class="text-input">
+          </div>
+          <button type="submit" class="link form__button">Tell me about your project</button>
+        </form>
+			</div>
+		</div>
+	</footer>
 </body>
+
+<script>
+  const form = document.getElementById('form');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = encodeURIComponent(nameInput.value.trim());
+    const email = encodeURIComponent(emailInput.value.trim());
+
+    if (!name) return alert('Please enter your name');
+
+    const subject = `New project from ${name || 'unknown user'}`;
+    const body = `Name: ${name}%0AEmail: ${email}%0A%0ATell me about your project:`;
+
+    window.location.href = `mailto:user@gmail.com?subject=${subject}&body=${body}`;
+  });
+</script>
 </html>
+
+
+
+
+
+
+
 
 
 
